@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study I — 9x8 checkerboard/performance-based (13 healthy subjects)",
-  "description": "This dataset comprises EEG recordings from 13 healthy subjects performing a P300-based brain-computer interface task using a 9x8 checkerboard stimulus paradigm. Participants completed a single session of visual perception tasks designed for speller applications, with 16-channel EEG data sampled at 256 Hz. This derivative dataset is part of the BigP3BCI project, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple studies.",
-  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 16 channels arranged in a standard 10-20 montage at a sampling rate of 256 Hz with 60 Hz line frequency. Participants performed a visual P300 task with a 9x8 checkerboard stimulus grid. Each trial had a duration of 1.0 second, with events classified as Target or NonTarget stimuli. HED 8.4.0 event annotations were applied to all experimental stimuli.",
+  "description": "This dataset comprises EEG recordings from 13 healthy subjects performing a P300-based brain-computer interface task using a 9x8 checkerboard stimulus paradigm. Participants completed a single session of visual perception tasks designed for character spelling applications, with 16-channel EEG data sampled at 256 Hz. This derivative dataset is part of the BigP3BCI project, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple studies.",
+  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 16 channels arranged in a standard 10-20 montage at a sampling rate of 256 Hz. The experimental paradigm employed a 9x8 checkerboard visual stimulus presentation with target and non-target event classifications. Data were collected in a laboratory environment with online feedback provided to participants. The trial interval was 0-1.0 seconds, and a 60 Hz line frequency filter was applied.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,27 +22,25 @@
   },
   "keywords": [
     {
-      "term": "P300"
+      "term": "EEG"
     },
     {
-      "term": "EEG"
+      "term": "P300"
     },
     {
       "term": "brain-computer interface"
     },
     {
-      "term": "Visual Perception",
+      "term": "visual perception"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "event-related potential"
-    },
-    {
-      "term": "speller paradigm"
-    },
-    {
-      "term": "checkerboard"
+      "term": "speller application"
     }
   ],
   "related_identifiers": [
@@ -57,11 +55,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000200",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -70,6 +63,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000200",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -78,15 +76,16 @@
     "eeg"
   ],
   "sizes": [
-    "334.2 MB (266 files)"
+    "1.7 GB (531 files)"
   ],
   "formats": [
     ".bdf",
+    ".edf",
     ".json",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "9bb2c6701a4b3c99481b2eec1fb226a90083362e1cba36cc17d95ec9c81fd5c5"
+  "source_hash": "600c0fa9d207d70c3cb17a199ce2569ce8fb1a76aa92f307e3f8b88119af26c8"
 }
