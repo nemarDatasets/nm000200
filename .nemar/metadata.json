@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study I — 9x8 checkerboard/performance-based (13 healthy subjects)",
-  "description": "This dataset comprises EEG recordings from 13 healthy subjects performing a P300-based brain-computer interface task using a 9x8 checkerboard stimulus paradigm. Participants completed a single session of visual perception tasks designed for character spelling applications, with 16-channel EEG data sampled at 256 Hz. This derivative dataset is part of the BigP3BCI project, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple studies.",
-  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 16 channels arranged in a standard 10-20 montage at a sampling rate of 256 Hz. The experimental paradigm employed a 9x8 checkerboard visual stimulus presentation with target and non-target event classifications. Data were collected in a laboratory environment with online feedback provided to participants. The trial interval was 0-1.0 seconds, and a 60 Hz line frequency filter was applied.",
+  "description": "This dataset comprises EEG recordings from 13 healthy subjects performing a P300-based brain-computer interface task using a 9x8 checkerboard stimulus paradigm. Participants completed a single session of visual perception tasks designed for speller applications, with 16-channel EEG data sampled at 256 Hz. This derivative dataset is part of the BigP3BCI study, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple studies.",
+  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 16 channels positioned according to the standard 10-20 montage. Sampling rate was 256 Hz with a line frequency of 60 Hz. The experimental paradigm employed a 9x8 checkerboard visual stimulus presentation with target and non-target event classifications. Trial intervals were defined from 0 to 1.0 seconds, and within-subject calibration-then-test cross-validation was applied for evaluation.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,16 +22,10 @@
   },
   "keywords": [
     {
-      "term": "EEG"
-    },
-    {
-      "term": "P300"
-    },
-    {
       "term": "brain-computer interface"
     },
     {
-      "term": "visual perception"
+      "term": "EEG"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -40,7 +34,19 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
+    },
+    {
       "term": "speller application"
+    },
+    {
+      "term": "checkerboard"
+    },
+    {
+      "term": "visual stimulus"
     }
   ],
   "related_identifiers": [
@@ -87,5 +93,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "600c0fa9d207d70c3cb17a199ce2569ce8fb1a76aa92f307e3f8b88119af26c8"
+  "source_hash": "2e265957695b058d6b35fc098bef8fd139bc8728ee67b4e4b03657db4a40cbb7"
 }
