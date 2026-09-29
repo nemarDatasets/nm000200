@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study I — 9x8 checkerboard/performance-based (13 healthy subjects)",
-  "description": "This dataset comprises EEG recordings from 13 healthy subjects performing a P300-based brain-computer interface task using a 9x8 checkerboard stimulus paradigm. Participants completed a single session of visual perception tasks designed for speller applications, with 16-channel EEG data sampled at 256 Hz. This derivative dataset is part of the BigP3BCI study, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple studies.",
-  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 16 channels positioned according to the standard 10-20 montage. Sampling rate was 256 Hz with a line frequency of 60 Hz. The experimental paradigm employed a 9x8 checkerboard visual stimulus presentation with target and non-target event classifications. Trial intervals were defined from 0 to 1.0 seconds, and within-subject calibration-then-test cross-validation was applied for evaluation.",
+  "description": "This dataset contains EEG recordings from 13 healthy participants in Study I of the bigP3BCI collection. Participants used a P300-based brain-computer interface speller with a 9x8 character grid and a checkerboard, performance-based stimulus paradigm. Data were recorded from 16 EEG channels at 256 Hz and annotated with Target and NonTarget events. The dataset is a BIDS-formatted derivative of the PhysioNet bigP3BCI release.",
+  "methods_description": "EEG was recorded from 16 channels using a g.USBamp amplifier (g.tec) at 256 Hz, with electrodes placed in the standard 10-20 montage and a 60 Hz line frequency. Participants performed a calibration phase followed by online speller testing with feedback in a laboratory setting. Events were labeled as Target or NonTarget, with trials spanning 0-1.0 s after stimulus onset.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,31 +22,22 @@
   },
   "keywords": [
     {
-      "term": "brain-computer interface"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "P300"
     },
     {
-      "term": "Visual Perception",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
+      "term": "brain-computer interface"
     },
     {
-      "term": "speller application"
+      "term": "speller"
     },
     {
-      "term": "checkerboard"
+      "term": "event-related potentials"
     },
     {
-      "term": "visual stimulus"
+      "term": "visual perception"
     }
   ],
   "related_identifiers": [
@@ -82,7 +73,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.7 GB (531 files)"
+    "1.56 GB (531 files)"
   ],
   "formats": [
     ".bdf",
