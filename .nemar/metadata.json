@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study I — 9x8 checkerboard/performance-based (13 healthy subjects)",
-  "description": "This dataset contains EEG recordings from 13 healthy participants in Study I of the bigP3BCI collection. Participants used a P300-based brain-computer interface speller with a 9x8 character grid and a checkerboard, performance-based stimulus paradigm. Data were recorded from 16 EEG channels at 256 Hz and annotated with Target and NonTarget events. The dataset is a BIDS-formatted derivative of the PhysioNet bigP3BCI release.",
-  "methods_description": "EEG was recorded from 16 channels using a g.USBamp amplifier (g.tec) at 256 Hz, with electrodes placed in the standard 10-20 montage and a 60 Hz line frequency. Participants performed a calibration phase followed by online speller testing with feedback in a laboratory setting. Events were labeled as Target or NonTarget, with trials spanning 0-1.0 s after stimulus onset.",
+  "description": "This dataset is a BIDS-formatted derivative of Study I of the bigP3BCI collection, which contains EEG recordings from 13 healthy participants using a P300-based speller with a 9x8 checkerboard character grid and a performance-based paradigm. EEG was recorded from 16 channels at 256 Hz, with target and non-target stimulus events annotated using HED. The data support machine-learning benchmarking of P300 brain-computer interface classification with calibration-then-test evaluation.",
+  "methods_description": "EEG was recorded with a g.USBamp amplifier (g.tec) from 16 channels in a standard 10-20 montage at 256 Hz, with a 60 Hz line frequency. Participants performed a visual P300 speller task in a laboratory setting with online feedback. Events were labeled Target or NonTarget, with a trial interval of 0-1.0 s.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,7 +28,9 @@
       "term": "P300"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "speller"
@@ -79,10 +81,11 @@
     ".bdf",
     ".edf",
     ".json",
+    ".jsonl",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "2e265957695b058d6b35fc098bef8fd139bc8728ee67b4e4b03657db4a40cbb7"
+  "source_hash": "d94303c08dfc4cd43c621664444d4c897b71f818ef877ff95a17be175ee2b195"
 }
